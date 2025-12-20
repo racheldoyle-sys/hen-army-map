@@ -473,11 +473,6 @@ var simplemaps_usmap_mapdata={
       lat: 44.032,
       lng: -104.095
     },
-    "35": {
-      name: "Colton Crowe",
-      lat: 39.489,
-      lng: -88.171
-    },
     "36": {
       name: "Ricardo Mendoza",
       lat: 41.876,
