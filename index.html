@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HEN Army Map</title>
+    <style>
+      html, body { margin: 0; padding: 0; width: 100%; height: 100%; }
+      #map { width: 100%; height: 100vh; }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <script src="mapdata.js"></script>
+    <script src="usmap.js"></script>
+
+    <script>
+      // Wait until SimpleMaps loads, then attach click handler
+      function attachHooks() {
+        if (!window.simplemaps_usmap || !simplemaps_usmap.hooks) {
+          return setTimeout(attachHooks, 50);
+        }
+
+        // Fires when a marker is clicked
+        simplemaps_usmap.hooks.click_location = function (id) {
+          // "id" is the key of your locations object: "0", "1", "2", etc.
+          window.parent.postMessage(
+            { type: "henArmyRepClicked", locationId: String(id) },
+            "*"
+          );
+        };
+      }
+      attachHooks();
+    </script>
+  </body>
+</html>
