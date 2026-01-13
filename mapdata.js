@@ -408,11 +408,6 @@ var simplemaps_usmap_mapdata={
       lat: 42.884,
       lng: -72.253
     },
-    "22": {
-      name: "Justin Champion",
-      lat: 35.166,
-      lng: -106.636
-    },
     "23": {
       name: "Beau Smith",
       lat: 40.693,
@@ -472,11 +467,6 @@ var simplemaps_usmap_mapdata={
       name: "Ricardo Mendoza",
       lat: 41.876,
       lng: -87.986
-    },
-    "37": {
-      name: "John Mullen",
-      lat: 41.604,
-      lng: -90.354
     },
     "38": {
       name: "Mark Mahan",
