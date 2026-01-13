@@ -8,7 +8,7 @@ var simplemaps_usmap_mapdata={
     popups: "detect",
     state_description: "",
     state_color: "#e6e6e6",
-    state_hover_color: "#a5b9c4  ",
+    state_hover_color: "#a5b9c4",
     state_url: "",
     border_size: "2.5",
     all_states_inactive: "yes",
@@ -457,11 +457,6 @@ var simplemaps_usmap_mapdata={
       name: "Tom Hollick",
       lat: 29.583,
       lng: -98.207
-    },
-    "32": {
-      name: "Billy Morris",
-      lat: 30.063,
-      lng: -95.165
     },
     "33": {
       name: "Rudi Betancourt",
