@@ -408,6 +408,11 @@ var simplemaps_usmap_mapdata={
       lat: 42.884,
       lng: -72.253
     },
+    "22": {
+      name: "Mike Kotzo",
+      lat: 40.812,
+      lng: -76.401
+    },
     "23": {
       name: "Beau Smith",
       lat: 40.693,
@@ -453,6 +458,11 @@ var simplemaps_usmap_mapdata={
       lat: 29.583,
       lng: -98.207
     },
+    "32": {
+      name: "Jim Renniger",
+      lat: 40.074,
+      lng: -75.31
+    },
     "33": {
       name: "Rudi Betancourt",
       lat: 42.615,
@@ -462,6 +472,11 @@ var simplemaps_usmap_mapdata={
       name: "Ronald Briggs",
       lat: 44.032,
       lng: -104.095
+    },
+    "35": {
+      name: "Brandon Monical",
+      lat: 40.84,
+      lng: -89.608
     },
     "36": {
       name: "Ricardo Mendoza",
