@@ -553,11 +553,6 @@ var simplemaps_usmap_mapdata={
       lat: 42.231,
       lng: -71.912
     },
-    "51": {
-      name: "Ken Scofield",
-      lat: 39.086,
-      lng: -94.375
-    },
     "52": {
       name: "Kevin Sibbett",
       lat: 40.678,
