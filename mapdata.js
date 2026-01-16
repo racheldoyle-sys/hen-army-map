@@ -483,6 +483,11 @@ var simplemaps_usmap_mapdata={
       lat: 41.876,
       lng: -87.986
     },
+    "37": {
+      name: "Fernie Martinez",
+      lat: 26.173,
+      lng: -98.159
+    },
     "38": {
       name: "Mark Mahan",
       lat: 32.705,
@@ -517,6 +522,61 @@ var simplemaps_usmap_mapdata={
       name: "Brett Willey",
       lat: 41.3,
       lng: -111.994
+    },
+    "45": {
+      name: "Ross Jumonville",
+      lat: 30.077,
+      lng: -92.208
+    },
+    "46": {
+      name: "Ken Scofield",
+      lat: 39.086,
+      lng: -94.375
+    },
+    "47": {
+      name: "Ljay Geist",
+      lat: 38.082,
+      lng: -97.873
+    },
+    "48": {
+      name: "Corbin Shattuck",
+      lat: 43.606,
+      lng: -72.952
+    },
+    "49": {
+      name: "Jacob Williamson",
+      lat: 32.672,
+      lng: -84.977
+    },
+    "50": {
+      name: "Jason Edson",
+      lat: 42.231,
+      lng: -71.912
+    },
+    "51": {
+      name: "Ken Scofield",
+      lat: 39.086,
+      lng: -94.375
+    },
+    "52": {
+      name: "Kevin Sibbett",
+      lat: 40.678,
+      lng: -76.219
+    },
+    "53": {
+      name: "Kyle Chapman",
+      lat: 41.313,
+      lng: -72.144
+    },
+    "54": {
+      name: "Kyle Maldonado",
+      lat: 42.179,
+      lng: -71.881
+    },
+    "55": {
+      name: "Michael Goldstein",
+      lat: 42.853,
+      lng: -71.682
     }
   },
   labels: {
