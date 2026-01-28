@@ -398,11 +398,6 @@ var simplemaps_usmap_mapdata={
       lat: 35.736,
       lng: -81.549
     },
-    "20": {
-      name: "Jason Carriveau",
-      lat: 46.794,
-      lng: -96.915
-    },
     "21": {
       name: "Jake Poulin",
       lat: 42.884,
