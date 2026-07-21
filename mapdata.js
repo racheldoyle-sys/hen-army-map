@@ -1,4 +1,4 @@
-var simplemaps_usmap_mapdata={
+var simplemaps_namap_mapdata={
   main_settings: {
    //General settings
     width: "responsive", //'700' or 'responsive'
@@ -10,17 +10,19 @@ var simplemaps_usmap_mapdata={
     state_color: "#e6e6e6",
     state_hover_color: "#a5b9c4",
     state_url: "",
-    border_size: "2.5",
+    border_size: "1.5",
     all_states_inactive: "yes",
     all_states_zoomable: "no",
-    location_description: "",
+    
+    //Location defaults
+    location_description: "Location description",
     location_color: "#3076bc",
-    location_opacity: 0.8,
+    location_opacity: "0.8",
     location_hover_opacity: 1,
     location_url: "",
-    location_size: "45",
+    location_size: "30",
     location_type: "marker",
-    location_image_source: "",
+    location_image_source: "frog.png",
     location_border_color: "#FFFFFF",
     location_border: 2,
     location_hover_border: 2.5,
@@ -28,22 +30,23 @@ var simplemaps_usmap_mapdata={
     all_locations_hidden: "no",
     
     //Label defaults
-    label_color: "#fff",
-    label_hover_color: "#fff",
-    label_size: 22,
+    label_color: "#e6e6e6",
+    label_hover_color: "#e6e6e6",
+    label_size: "22",
     label_font: "Arial",
-    hide_labels: "yes",
-    hide_eastern_labels: "yes    ",
+    hide_labels: "no",
     manual_zoom: "no",
-    initial_zoom: -1,
-    initial_zoom_solo: "no",
-    zoom_out_incrementally: "no",
-    zoom_percentage: 0.99,
-    zoom_time: 0.5,
     back_image: "no",
+    arrow_color: "#cecece",
+    arrow_color_border: "#808080",
     initial_back: "no",
+    initial_zoom: "-1",
+    initial_zoom_solo: "no",
     region_opacity: 1,
     region_hover_opacity: 0.6,
+    zoom_out_incrementally: "yes",
+    zoom_percentage: 0.99,
+    zoom_time: 0.5,
     
     //Popup settings
     popup_color: "white",
@@ -57,471 +60,445 @@ var simplemaps_usmap_mapdata={
     div: "map",
     auto_load: "yes",
     url_new_tab: "yes",
-    images_directory: "./map_images/",
+    images_directory: "default",
     fade_time: 0.1,
     import_labels: "no",
     link_text: "View Website",
     state_image_url: "",
     state_image_position: "",
-    location_image_url: "",
-    border_hover_color: ""
+    location_image_url: ""
   },
   state_specific: {
-    HI: {
-      zoomable: "no",
-      name: "Hawaii"
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {},
+    AB: {
+      name: "Alberta"
     },
     AK: {
-      zoomable: "no",
       name: "Alaska"
     },
-    FL: {
-      zoomable: "no",
-      name: "Florida"
-    },
-    NH: {
-      zoomable: "no",
-      name: "New Hampshire"
-    },
-    VT: {
-      zoomable: "no",
-      name: "Vermont"
-    },
-    ME: {
-      zoomable: "no",
-      name: "Maine"
-    },
-    RI: {
-      zoomable: "no",
-      name: "Rhode Island"
-    },
-    CT: {
-      zoomable: "no",
-      name: "Connecticut"
-    },
-    MA: {
-      zoomable: "no",
-      name: "Massachusetts"
-    },
-    NY: {
-      zoomable: "no",
-      name: "New York"
-    },
-    PA: {
-      zoomable: "no",
-      name: "Pennsylvania"
-    },
-    NJ: {
-      zoomable: "no",
-      name: "New Jersey"
-    },
-    DE: {
-      zoomable: "no",
-      name: "Delaware"
-    },
-    MD: {
-      zoomable: "no",
-      name: "Maryland"
-    },
-    VA: {
-      zoomable: "no",
-      name: "Virginia"
-    },
-    WV: {
-      zoomable: "no",
-      name: "West Virginia"
-    },
-    DC: {
-      zoomable: "no",
-      name: "District of Columbia"
-    },
-    OH: {
-      zoomable: "no",
-      name: "Ohio"
-    },
-    IN: {
-      zoomable: "no",
-      name: "Indiana"
-    },
-    IL: {
-      zoomable: "no",
-      name: "Illinois"
-    },
-    WI: {
-      zoomable: "no",
-      name: "Wisconsin"
-    },
-    MI: {
-      zoomable: "no",
-      name: "Michigan"
-    },
-    NC: {
-      zoomable: "no",
-      name: "North Carolina"
-    },
-    SC: {
-      zoomable: "no",
-      name: "South Carolina"
-    },
-    TN: {
-      zoomable: "no",
-      name: "Tennessee"
-    },
-    KY: {
-      zoomable: "no",
-      name: "Kentucky"
-    },
-    GA: {
-      zoomable: "no",
-      name: "Georgia"
-    },
     AL: {
-      zoomable: "no",
       name: "Alabama"
     },
-    MS: {
-      zoomable: "no",
-      name: "Mississippi"
-    },
     AR: {
-      zoomable: "no",
       name: "Arkansas"
     },
-    LA: {
-      zoomable: "no",
-      name: "Louisiana"
-    },
-    OK: {
-      zoomable: "no",
-      name: "Oklahoma"
-    },
-    MO: {
-      zoomable: "no",
-      name: "Missouri"
-    },
-    KS: {
-      zoomable: "no",
-      name: "Kansas"
-    },
-    IA: {
-      zoomable: "no",
-      name: "Iowa"
-    },
-    NE: {
-      zoomable: "no",
-      name: "Nebraska"
-    },
-    MN: {
-      zoomable: "no",
-      name: "Minnesota"
-    },
-    SD: {
-      zoomable: "no",
-      name: "South Dakota"
-    },
-    ND: {
-      zoomable: "no",
-      name: "North Dakota"
-    },
-    WY: {
-      zoomable: "no",
-      name: "Wyoming"
-    },
-    MT: {
-      zoomable: "no",
-      name: "Montana"
-    },
-    UT: {
-      zoomable: "no",
-      name: "Utah"
-    },
-    CO: {
-      zoomable: "no",
-      name: "Colorado"
-    },
     AZ: {
-      zoomable: "no",
       name: "Arizona"
     },
-    NV: {
-      zoomable: "no",
-      name: "Nevada"
-    },
-    OR: {
-      zoomable: "no",
-      name: "Oregon"
-    },
-    WA: {
-      zoomable: "no",
-      name: "Washington"
+    BC: {
+      name: "British Columbia"
     },
     CA: {
-      zoomable: "no",
       name: "California"
     },
+    CO: {
+      name: "Colorado"
+    },
+    CT: {
+      name: "Connecticut"
+    },
+    DC: {
+      name: "District of Columbia"
+    },
+    DE: {
+      name: "Delaware"
+    },
+    FL: {
+      name: "Florida"
+    },
+    GA: {
+      name: "Georgia"
+    },
+    HI: {
+      name: "Hawaii"
+    },
+    IA: {
+      name: "Iowa"
+    },
     ID: {
-      zoomable: "no",
       name: "Idaho"
     },
-    TX: {
-      zoomable: "no",
-      name: "Texas"
+    IL: {
+      name: "Illinois"
+    },
+    IN: {
+      name: "Indiana"
+    },
+    KS: {
+      name: "Kansas"
+    },
+    KY: {
+      name: "Kentucky"
+    },
+    LA: {
+      name: "Louisiana"
+    },
+    MA: {
+      name: "Massachusetts"
+    },
+    MB: {
+      name: "Manitoba"
+    },
+    MD: {
+      name: "Maryland"
+    },
+    ME: {
+      name: "Maine"
+    },
+    MI: {
+      name: "Michigan"
+    },
+    MN: {
+      name: "Minnesota"
+    },
+    MO: {
+      name: "Missouri"
+    },
+    MS: {
+      name: "Mississippi"
+    },
+    MT: {
+      name: "Montana"
+    },
+    MX: {
+      name: "Mexico"
+    },
+    NB: {
+      name: "New Brunswick"
+    },
+    NC: {
+      name: "North Carolina"
+    },
+    ND: {
+      name: "North Dakota"
+    },
+    NE: {
+      name: "Nebraska"
+    },
+    NH: {
+      name: "New Hampshire"
+    },
+    NJ: {
+      name: "New Jersey"
+    },
+    NL: {
+      name: "Newfoundland"
     },
     NM: {
-      zoomable: "no",
       name: "New Mexico"
     },
-    GU: {
-      hide: "yes",
-      zoomable: "no",
-      name: "Guam"
+    NS: {
+      name: "Nova Scotia"
     },
-    VI: {
-      hide: "yes",
-      zoomable: "no",
-      name: "Virgin Islands"
+    NT: {
+      name: "Northwest Territories"
     },
-    PR: {
-      hide: "yes",
-      zoomable: "no",
-      name: "Puerto Rico"
+    NU: {
+      name: "Nunavut"
     },
-    MP: {
-      hide: "yes",
-      zoomable: "no",
-      name: "Northern Mariana Islands"
+    NV: {
+      name: "Nevada"
     },
-    AS: {
-      hide: "yes",
-      zoomable: "no",
-      name: "American Samoa"
+    NY: {
+      name: "New York"
+    },
+    OH: {
+      name: "Ohio"
+    },
+    OK: {
+      name: "Oklahoma"
+    },
+    ON: {
+      name: "Ontario"
+    },
+    OR: {
+      name: "Oregon"
+    },
+    PA: {
+      name: "Pennsylvania"
+    },
+    PE: {
+      name: "Prince Edward Island"
+    },
+    QC: {
+      name: "Quebec"
+    },
+    RI: {
+      name: "Rhode Island"
+    },
+    SC: {
+      name: "South Carolina"
+    },
+    SD: {
+      name: "South Dakota"
+    },
+    SK: {
+      name: "Saskatchewan"
+    },
+    TN: {
+      name: "Tennessee"
+    },
+    TX: {
+      name: "Texas"
+    },
+    UT: {
+      name: "Utah"
+    },
+    VA: {
+      name: "Virginia"
+    },
+    VT: {
+      name: "Vermont"
+    },
+    WA: {
+      name: "Washington"
+    },
+    WI: {
+      name: "Wisconsin"
+    },
+    WV: {
+      name: "West Virginia"
+    },
+    WY: {
+      name: "Wyoming"
+    },
+    YT: {
+      name: "Yukon"
     }
   },
   locations: {
     "0": {
-      name: "Bo Vest",
-      lat: 35.035,
-      lng: -92.064
+      name: "Alan Holmes",
+      lat: 33.409,
+      lng: -79.361
     },
     "1": {
-      name: "Stephen Adams",
-      lat: 34.946,
-      lng: -91.979
+      name: "Allison Adams",
+      lat: 38.939,
+      lng: -90.918
     },
     "2": {
-      name: "Francis Enos",
-      lat: 40.616,
-      lng: -124.202
-    },
-    "3": {
-      name: "Jeff Switowski",
-      lat: 38.558,
-      lng: -121.431
-    },
-    "4": {
-      name: "Trevor Holliday",
-      lat: 37.508,
-      lng: -105.009
-    },
-    "5": {
-      name: "Matthew Johnson",
-      lat: 25.694,
-      lng: -80.428
-    },
-    "6": {
-      name: "George Faucher",
-      lat: 30.61,
-      lng: -81.537
-    },
-    "7": {
-      name: "Jason Howard",
-      lat: 43.479,
-      lng: -111.953
-    },
-    "8": {
-      name: "Joshua Delamarian",
-      lat: 47.926,
-      lng: -116.804
-    },
-    "9": {
-      name: "Travis Young",
-      lat: 37.738,
-      lng: -89.256
-    },
-    "10": {
-      name: "Nate Ginley",
-      lat: 40.008,
-      lng: -85.749
-    },
-    "11": {
-      name: "Mike Alt",
-      lat: 39.475,
-      lng: -76.319
-    },
-    "12": {
-      name: "Sean Connell",
-      lat: 43.371,
-      lng: -70.673
-    },
-    "13": {
-      name: "Ryan Smith",
-      lat: 42.739,
-      lng: -84.408
-    },
-    "14": {
-      name: "Jonathon Alford",
-      lat: 31.47,
-      lng: -90.56
-    },
-    "15": {
-      name: "Collin Campbell",
-      lat: 47.476,
-      lng: -111.328
-    },
-    "16": {
-      name: "Eric Stephenson ",
-      lat: 34.784,
-      lng: -76.902
-    },
-    "17": {
-      name: "Jeff Russell",
-      lat: 35.945,
-      lng: -80.593
-    },
-    "18": {
-      name: "Darren Watkins",
-      lat: 35.052,
-      lng: -84.066
-    },
-    "19": {
-      name: "Michael Carswell",
-      lat: 35.736,
-      lng: -81.549
-    },
-    "21": {
-      name: "Jake Poulin",
-      lat: 42.884,
-      lng: -72.253
-    },
-    "22": {
-      name: "Mike Kotzo",
-      lat: 40.812,
-      lng: -76.401
-    },
-    "23": {
-      name: "Beau Smith",
-      lat: 40.693,
-      lng: -84.242
-    },
-    "24": {
-      name: "Matt Abernathy",
-      lat: 36.966,
-      lng: -94.777
-    },
-    "25": {
-      name: "Gavin Blue",
-      lat: 34.533,
-      lng: -96.221
-    },
-    "26": {
       name: "Andrew Snodgrass",
       lat: 45.147,
       lng: -122.84
     },
-    "27": {
-      name: "Derek Bowling",
-      lat: 33.663,
-      lng: -81.853
+    "3": {
+      name: "Angela Haynes",
+      lat: 36.576,
+      lng: -82.737
     },
-    "28": {
-      name: "Michael Guest",
-      lat: 34.444,
-      lng: -82.399
+    "4": {
+      lat: "40.693",
+      lng: "-84.242",
+      name: "Beau Smith"
     },
-    "29": {
-      name: "Kevin Cate",
-      lat: 36,
-      lng: -83.756
+    "5": {
+      name: "Bo Vest",
+      lat: 35.035,
+      lng: -92.064
     },
-    "30": {
-      name: "Shawn Russell",
-      lat: 33.172,
-      lng: -96.931
+    "6": {
+      name: "Brandon Burnett",
+      lat: 40.595,
+      lng: -89.62
     },
-    "31": {
-      name: "Tom Hollick",
-      lat: 29.583,
-      lng: -98.207
+    "7": {
+      name: "Brandon Cory",
+      lat: 46.51,
+      lng: -87.636
     },
-    "32": {
-      name: "Jim Renniger",
-      lat: 40.074,
-      lng: -75.31
-    },
-    "33": {
-      name: "Rudi Betancourt",
-      lat: 42.615,
-      lng: -87.828
-    },
-    "34": {
-      name: "Ronald Briggs",
-      lat: 44.032,
-      lng: -104.095
-    },
-    "35": {
-      name: "Brandon Monical",
-      lat: 40.84,
-      lng: -89.608
-    },
-    "36": {
-      name: "Ricardo Mendoza",
-      lat: 41.876,
-      lng: -87.986
-    },
-    "37": {
-      name: "Fernie Martinez",
-      lat: 26.173,
-      lng: -98.159
-    },
-    "38": {
-      name: "Mark Mahan",
-      lat: 32.705,
-      lng: -95.119
-    },
-    "39": {
-      name: "Cory Payton",
-      lat: 38.038,
-      lng: -120.228
-    },
-    "40": {
-      name: "Jeff Adams",
-      lat: 33.902,
-      lng: -117.871
-    },
-    "41": {
-      name: "Devin Trujillo",
-      lat: 33.689,
-      lng: -101.987
-    },
-    "42": {
-      name: "Khalen Howard",
-      lat: 35.225,
-      lng: -106.633
-    },
-    "43": {
-      name: "Victor Short ",
-      lat: 32.15,
-      lng: -110.778
-    },
-    "44": {
+    "8": {
       name: "Brett Willey",
       lat: 41.3,
       lng: -111.994
     },
+    "9": {
+      name: "Brian Rondeau",
+      lat: 43.266,
+      lng: -71.95
+    },
+    "10": {
+      name: "Brock Friddell",
+      lat: 40.057,
+      lng: -74.912
+    },
+    "11": {
+      name: "Colton Brown",
+      lat: 34.163,
+      lng: -84.465
+    },
+    "12": {
+      name: "Conner Roberts",
+      lat: 34.698,
+      lng: -92.467
+    },
+    "13": {
+      name: "Corey Alaver",
+      lat: 44.339,
+      lng: -76.83
+    },
+    "14": {
+      name: "Cory Payton",
+      lat: 38.038,
+      lng: -120.228
+    },
+    "15": {
+      name: "Daniel Johnston",
+      lat: 45.295,
+      lng: -65.989
+    },
+    "16": {
+      name: "Darren Watkins",
+      lat: 35.052,
+      lng: -84.066
+    },
+    "17": {
+      name: "Darrick Graff",
+      lat: 53.555,
+      lng: -113.906
+    },
+    "18": {
+      name: "Derek Bowling",
+      lat: 33.663,
+      lng: -81.853
+    },
+    "19": {
+      name: "Eric Johnson",
+      lat: 44.539,
+      lng: -88.037
+    },
+    "20": {
+      name: "Eric Stephenson",
+      lat: 34.784,
+      lng: -76.902
+    },
+    "21": {
+      name: "Fernie Martinez",
+      lat: 26.173,
+      lng: -98.159
+    },
+    "22": {
+      name: "Gareth Lockhart",
+      lat: 49.172,
+      lng: -122.582
+    },
+    "23": {
+      name: "Gavin Blue",
+      lat: 34.533,
+      lng: -96.221
+    },
+    "24": {
+      name: "George Wiggins",
+      lat: 38.291,
+      lng: -85.569
+    },
+    "25": {
+      name: "Greg Wild",
+      lat: 35.757,
+      lng: -86.896
+    },
+    "26": {
+      name: "Howard Simmons",
+      lat: 43.086,
+      lng: -75.872
+    },
+    "27": {
+      name: "Jacob McAfee",
+      lat: 36.803,
+      lng: -119.631
+    },
+    "28": {
+      name: "Jacob Williamson",
+      lat: 32.672,
+      lng: -84.977
+    },
+    "29": {
+      name: "Jake Poulin",
+      lat: 42.884,
+      lng: -72.253
+    },
+    "30": {
+      name: "Jared Kitt",
+      lat: 41.049,
+      lng: -80.622
+    },
+    "31": {
+      name: "Jason Howard",
+      lat: 43.479,
+      lng: -111.953
+    },
+    "32": {
+      name: "Jeff Russell",
+      lat: 35.945,
+      lng: -80.593
+    },
+    "33": {
+      name: "Jeffrey Switkowski",
+      lat: 38.558,
+      lng: -121.431
+    },
+    "34": {
+      name: "Jeremie Humphrey",
+      lat: 37.015,
+      lng: -94.731
+    },
+    "35": {
+      name: "Jesse Beaudrow",
+      lat: 44.43,
+      lng: -79.147
+    },
+    "36": {
+      name: "Jim Renninger",
+      lat: 40.074,
+      lng: -75.31
+    },
+    "37": {
+      name: "John Merklein",
+      lat: 39.853,
+      lng: -75.127
+    },
+    "38": {
+      name: "Jon Chilton",
+      lat: 28.299,
+      lng: -82.51
+    },
+    "39": {
+      name: "Jon Mackey",
+      lat: 41.435,
+      lng: -73.479
+    },
+    "40": {
+      name: "Jonathan Senger",
+      lat: 50.591,
+      lng: -113.897
+    },
+    "41": {
+      name: "Jonathon Alford",
+      lat: 31.47,
+      lng: -90.56
+    },
+    "42": {
+      name: "Joseph Henry",
+      lat: 35.78,
+      lng: -77.954
+    },
+    "43": {
+      name: "Josh Bryan",
+      lat: 39.881,
+      lng: -82.036
+    },
+    "44": {
+      name: "Josh Payne",
+      lat: 40.219,
+      lng: -79.687
+    },
     "45": {
-      name: "Ross Jumonville",
-      lat: 30.077,
-      lng: -92.208
+      name: "Joshua Delamarian",
+      lat: 47.926,
+      lng: -116.804
     },
     "46": {
       name: "Ken Scofield",
@@ -529,335 +506,568 @@ var simplemaps_usmap_mapdata={
       lng: -94.375
     },
     "47": {
-      name: "Ljay Geist",
-      lat: 38.082,
-      lng: -97.873
+      name: "Kevin Cate",
+      lat: 36,
+      lng: -83.756
     },
     "48": {
-      name: "Corbin Shattuck",
-      lat: 43.606,
-      lng: -72.952
-    },
-    "49": {
-      name: "Jacob Williamson",
-      lat: 32.672,
-      lng: -84.977
-    },
-    "50": {
-      name: "Jason Edson",
-      lat: 42.231,
-      lng: -71.912
-    },
-    "52": {
       name: "Kevin Sibbett",
       lat: 40.678,
       lng: -76.219
     },
-    "53": {
-      name: "Kyle Chapman",
-      lat: 41.313,
-      lng: -72.144
+    "49": {
+      name: "Khalen Howard",
+      lat: 35.225,
+      lng: -106.633
     },
-    "54": {
+    "50": {
+      name: "Kimo Bandmann",
+      lat: 29.992,
+      lng: -95.52
+    },
+    "51": {
       name: "Kyle Maldonado",
       lat: 42.179,
       lng: -71.881
     },
+    "52": {
+      name: "Kyle Nicholas Chapman",
+      lat: 41.313,
+      lng: -72.144
+    },
+    "53": {
+      lat: 45.266,
+      lng: -73.604,
+      name: "Marc Andre Aubin"
+    },
+    "54": {
+      lat: 39.997,
+      lng: -74.947,
+      name: "Marc Friddell"
+    },
     "55": {
-      name: "Michael Goldstein",
+      lat: 41.128,
+      lng: -112.124,
+      name: "Matt Evans"
+    },
+    "56": {
+      lat: 25.694,
+      lng: -80.428,
+      name: "Matthew Johnson"
+    },
+    "57": {
+      lat: 50.921,
+      lng: -113.874,
+      name: "Matthew McMullen"
+    },
+    "58": {
+      lat: 52.833,
+      lng: -110.841,
+      name: "Max Racette"
+    },
+    "59": {
+      lat: 39.475,
+      lng: -76.319,
+      name: "Michael Alt"
+    },
+    "60": {
       lat: 42.853,
-      lng: -71.682
+      lng: -71.682,
+      name: "Michael Goldstein"
+    },
+    "61": {
+      lat: 40.812,
+      lng: -76.401,
+      name: "Michael Kotzo"
+    },
+    "62": {
+      lat: 32.547,
+      lng: -85.119,
+      name: "Micheal McCollum"
+    },
+    "63": {
+      lat: 29.705,
+      lng: -98.305,
+      name: "Miles Bentz"
+    },
+    "64": {
+      lat: 40.008,
+      lng: -85.749,
+      name: "Nate Ginley"
+    },
+    "65": {
+      lat: 40.994,
+      lng: -80.382,
+      name: "Nick Lutes"
+    },
+    "66": {
+      lat: 42.049,
+      lng: -124.26,
+      name: "Paul Dollar"
+    },
+    "67": {
+      lat: 33.205,
+      lng: -117.371,
+      name: "Rachel Delacour"
+    },
+    "68": {
+      lat: 30.206,
+      lng: -85.655,
+      name: "Randy Dozier"
+    },
+    "69": {
+      lat: 41.876,
+      lng: -87.986,
+      name: "Ricardo Mendoza"
+    },
+    "70": {
+      lat: 50.579,
+      lng: -119.941,
+      name: "Robert Perry"
+    },
+    "71": {
+      lat: 35,
+      lng: -114.577,
+      name: "Robert Schmidt"
+    },
+    "72": {
+      lat: 44.032,
+      lng: -104.095,
+      name: "Ronald Briggs"
+    },
+    "73": {
+      lat: 30.077,
+      lng: -92.208,
+      name: "Ross Jumonville"
+    },
+    "74": {
+      lat: 42.615,
+      lng: -87.828,
+      name: "Rudi Betancourt"
+    },
+    "75": {
+      lat: 42.739,
+      lng: -84.408,
+      name: "Ryan Smith"
+    },
+    "76": {
+      lat: 45.307,
+      lng: -75.899,
+      name: "Scott Field"
+    },
+    "77": {
+      lat: 43.371,
+      lng: -70.672,
+      name: "Sean Connell"
+    },
+    "78": {
+      lat: 41.072,
+      lng: -96.421,
+      name: "Shaun Washburn"
+    },
+    "79": {
+      lat: 34.749,
+      lng: -92.424,
+      name: "Stephan Adams"
+    },
+    "80": {
+      lat: 38.812,
+      lng: -120.875,
+      name: "Thomas McGrady"
+    },
+    "81": {
+      lat: 37.738,
+      lng: -89.256,
+      name: "Travis Young"
+    },
+    "82": {
+      lat: 37.508,
+      lng: -105.009,
+      name: "Trevor Holliday"
+    },
+    "83": {
+      lat: 27.907,
+      lng: -82.501,
+      name: "Tyler Whitfield"
+    },
+    "84": {
+      lat: 45.051,
+      lng: -93.378,
+      name: "Vance Schwartz"
+    },
+    "85": {
+      lat: 32.15,
+      lng: -110.778,
+      name: "Victor Short"
+    },
+    "86": {
+      lat: 32.514,
+      lng: -96.883,
+      name: "Zach Hagaman"
     }
   },
   labels: {
     NH: {
       parent_id: "NH",
-      x: "932",
-      y: "183",
-      width: 45
-    },
-    VT: {
-      parent_id: "VT",
-      x: "883",
-      y: "243",
-      width: 45
-    },
-    RI: {
-      parent_id: "RI",
-      x: "932",
-      y: "273",
-      width: 45
-    },
-    NJ: {
-      parent_id: "NJ",
-      x: "883",
-      y: "273",
-      width: 45
-    },
-    DE: {
-      parent_id: "DE",
-      x: "883",
-      y: "303",
-      width: 45
-    },
-    MD: {
-      parent_id: "MD",
-      x: "932",
-      y: "303",
-      width: 45
-    },
-    DC: {
-      parent_id: "DC",
-      x: "884",
-      y: "332",
-      width: 45
+      display: "all",
+      pill: "yes",
+      width: 30,
+      x: 920,
+      y: 565
     },
     MA: {
       parent_id: "MA",
-      x: "932",
-      y: "213",
-      width: 45
+      display: "all",
+      pill: "yes",
+      width: 30,
+      x: 920,
+      y: 590
     },
     CT: {
       parent_id: "CT",
-      x: "932",
-      y: "243",
-      width: 45
+      display: "all",
+      pill: "yes",
+      width: 30,
+      x: 920,
+      y: 615
+    },
+    RI: {
+      parent_id: "RI",
+      display: "all",
+      pill: "yes",
+      width: 30,
+      x: 920,
+      y: 640
+    },
+    MD: {
+      parent_id: "MD",
+      display: "all",
+      pill: "yes",
+      width: 30,
+      x: 920,
+      y: 665
+    },
+    VT: {
+      parent_id: "VT",
+      display: "all",
+      pill: "yes",
+      width: 30,
+      x: 885,
+      y: 590
+    },
+    NJ: {
+      parent_id: "NJ",
+      display: "all",
+      pill: "yes",
+      width: 30,
+      x: 885,
+      y: 615
+    },
+    DE: {
+      parent_id: "DE",
+      display: "all",
+      pill: "yes",
+      width: 30,
+      x: 885,
+      y: 640
+    },
+    DC: {
+      parent_id: "DC",
+      display: "all",
+      pill: "yes",
+      width: 30,
+      x: 885,
+      y: 665
     },
     HI: {
       parent_id: "HI",
-      x: 305,
-      y: 565
-    },
-    AK: {
-      parent_id: "AK",
-      x: "113",
-      y: "495"
-    },
-    FL: {
-      parent_id: "FL",
-      x: "773",
-      y: "510"
-    },
-    ME: {
-      parent_id: "ME",
-      x: "893",
-      y: "85"
-    },
-    NY: {
-      parent_id: "NY",
-      x: "815",
-      y: "158"
-    },
-    PA: {
-      parent_id: "PA",
-      x: "786",
-      y: "210"
-    },
-    VA: {
-      parent_id: "VA",
-      x: "790",
-      y: "282"
+      display: "all",
+      pill: "yes",
+      width: 30,
+      x: 290,
+      y: 640
     },
     WV: {
       parent_id: "WV",
-      x: "744",
-      y: "270"
-    },
-    OH: {
-      parent_id: "OH",
-      x: "700",
-      y: "240"
-    },
-    IN: {
-      parent_id: "IN",
-      x: "650",
-      y: "250"
-    },
-    IL: {
-      parent_id: "IL",
-      x: "600",
-      y: "250"
-    },
-    WI: {
-      parent_id: "WI",
-      x: "575",
-      y: "155"
-    },
-    NC: {
-      parent_id: "NC",
-      x: "784",
-      y: "326"
-    },
-    TN: {
-      parent_id: "TN",
-      x: "655",
-      y: "340"
-    },
-    AR: {
-      parent_id: "AR",
-      x: "548",
-      y: "368"
-    },
-    MO: {
-      parent_id: "MO",
-      x: "548",
-      y: "293"
-    },
-    GA: {
-      parent_id: "GA",
-      x: "718",
-      y: "405"
-    },
-    SC: {
-      parent_id: "SC",
-      x: "760",
-      y: "371"
-    },
-    KY: {
-      parent_id: "KY",
-      x: "680",
-      y: "300"
-    },
-    AL: {
-      parent_id: "AL",
-      x: "655",
-      y: "405"
-    },
-    LA: {
-      parent_id: "LA",
-      x: "550",
-      y: "435"
-    },
-    MS: {
-      parent_id: "MS",
-      x: "600",
-      y: "405"
-    },
-    IA: {
-      parent_id: "IA",
-      x: "525",
-      y: "210"
-    },
-    MN: {
-      parent_id: "MN",
-      x: "506",
-      y: "124"
-    },
-    OK: {
-      parent_id: "OK",
-      x: "460",
-      y: "360"
+      x: "803.4",
+      y: "601.7",
+      size: 11
     },
     TX: {
       parent_id: "TX",
-      x: "425",
-      y: "435"
+      x: 630,
+      y: 695
     },
-    NM: {
-      parent_id: "NM",
-      x: "305",
-      y: "365"
+    AK: {
+      parent_id: "AK",
+      x: 375,
+      y: 201
     },
-    KS: {
-      parent_id: "KS",
-      x: "445",
-      y: "290"
+    PE: {
+      parent_id: "PE",
+      display: "all",
+      pill: "yes",
+      width: 30,
+      x: 965,
+      y: 490
     },
-    NE: {
-      parent_id: "NE",
-      x: "420",
-      y: "225"
+    NS: {
+      parent_id: "NS",
+      display: "all",
+      pill: "yes",
+      width: 30,
+      x: 965,
+      y: 515
     },
-    SD: {
-      parent_id: "SD",
-      x: "413",
-      y: "160"
+    MX: {
+      parent_id: "MX",
+      x: "601.3",
+      y: "788.5"
     },
-    ND: {
-      parent_id: "ND",
-      x: "416",
-      y: "96"
+    MB: {
+      parent_id: "MB",
+      x: "656.4",
+      y: "417.8"
     },
-    WY: {
-      parent_id: "WY",
-      x: "300",
-      y: "180"
+    SK: {
+      parent_id: "SK",
+      x: "595.6",
+      y: "425.6"
+    },
+    AB: {
+      parent_id: "AB",
+      x: "534.6",
+      y: "407"
+    },
+    BC: {
+      parent_id: "BC",
+      x: "470.8",
+      y: "383.5"
+    },
+    NU: {
+      parent_id: "NU",
+      x: "652",
+      y: "289.5"
+    },
+    NT: {
+      parent_id: "NT",
+      x: "528.4",
+      y: "293.2"
+    },
+    YT: {
+      parent_id: "YT",
+      x: "438.5",
+      y: "275.6"
+    },
+    ON: {
+      parent_id: "ON",
+      x: "729.8",
+      y: "452.6"
+    },
+    QC: {
+      parent_id: "QC",
+      x: "833.9",
+      y: "431.3"
+    },
+    NB: {
+      parent_id: "NB",
+      x: "900.6",
+      y: "483.3"
+    },
+    NL: {
+      parent_id: "NL",
+      x: "901.1",
+      y: "384.5"
+    },
+    MN: {
+      parent_id: "MN",
+      x: "677.5",
+      y: "520.6"
     },
     MT: {
       parent_id: "MT",
-      x: "280",
-      y: "95"
+      x: "557.2",
+      y: "507.5"
     },
-    CO: {
-      parent_id: "CO",
-      x: "320",
-      y: "275"
-    },
-    UT: {
-      parent_id: "UT",
-      x: "223",
-      y: "260"
-    },
-    AZ: {
-      parent_id: "AZ",
-      x: "205",
-      y: "360"
-    },
-    NV: {
-      parent_id: "NV",
-      x: "140",
-      y: "235"
-    },
-    OR: {
-      parent_id: "OR",
-      x: "100",
-      y: "120"
-    },
-    WA: {
-      parent_id: "WA",
-      x: "130",
-      y: "55"
+    ND: {
+      parent_id: "ND",
+      x: "630.3",
+      y: "509.3"
     },
     ID: {
       parent_id: "ID",
-      x: "200",
-      y: "150"
+      x: "509.2",
+      y: "540.2"
+    },
+    WA: {
+      parent_id: "WA",
+      x: "476.8",
+      y: "485"
+    },
+    AZ: {
+      parent_id: "AZ",
+      x: "516.2",
+      y: "650.8"
     },
     CA: {
       parent_id: "CA",
-      x: "79",
-      y: "285"
+      x: "447.7",
+      y: "608.3"
+    },
+    CO: {
+      parent_id: "CO",
+      x: "579.7",
+      y: "604.6"
+    },
+    NV: {
+      parent_id: "NV",
+      x: "481.5",
+      y: "582.4"
+    },
+    NM: {
+      parent_id: "NM",
+      x: "569.4",
+      y: "656.2"
+    },
+    OR: {
+      parent_id: "OR",
+      x: "462",
+      y: "524.9"
+    },
+    UT: {
+      parent_id: "UT",
+      x: "526.1",
+      y: "595.7"
+    },
+    WY: {
+      parent_id: "WY",
+      x: "567.6",
+      y: "556.2"
+    },
+    AR: {
+      parent_id: "AR",
+      x: "699.3",
+      y: "655.2"
+    },
+    IA: {
+      parent_id: "IA",
+      x: "687.5",
+      y: "573.4"
+    },
+    KS: {
+      parent_id: "KS",
+      x: "644.2",
+      y: "614.6"
+    },
+    MO: {
+      parent_id: "MO",
+      x: "697.5",
+      y: "617.3"
+    },
+    NE: {
+      parent_id: "NE",
+      x: "632.8",
+      y: "579.3"
+    },
+    OK: {
+      parent_id: "OK",
+      x: "656.4",
+      y: "650.3"
+    },
+    SD: {
+      parent_id: "SD",
+      x: "630.6",
+      y: "544.5"
+    },
+    LA: {
+      parent_id: "LA",
+      x: "699.3",
+      y: "691"
+    },
+    AL: {
+      parent_id: "AL",
+      x: "756.2",
+      y: "677.6"
+    },
+    FL: {
+      parent_id: "FL",
+      x: "813.1",
+      y: "719.2"
+    },
+    GA: {
+      parent_id: "GA",
+      x: "790.9",
+      y: "675.4"
+    },
+    MS: {
+      parent_id: "MS",
+      x: "727.7",
+      y: "679.7"
+    },
+    SC: {
+      parent_id: "SC",
+      x: "813.1",
+      y: "657"
+    },
+    IL: {
+      parent_id: "IL",
+      x: "724.8",
+      y: "593"
+    },
+    IN: {
+      parent_id: "IN",
+      x: "753.5",
+      y: "594.2"
+    },
+    KY: {
+      parent_id: "KY",
+      x: "772.2",
+      y: "617"
+    },
+    NC: {
+      parent_id: "NC",
+      x: "831.6",
+      y: "634.4"
+    },
+    OH: {
+      parent_id: "OH",
+      x: "781",
+      y: "587.7"
+    },
+    TN: {
+      parent_id: "TN",
+      x: "756.7",
+      y: "641.3"
+    },
+    VA: {
+      parent_id: "VA",
+      x: "822.2",
+      y: "611.8"
+    },
+    WI: {
+      parent_id: "WI",
+      x: "715.9",
+      y: "539.3"
+    },
+    NY: {
+      parent_id: "NY",
+      x: "844.7",
+      y: "541.3"
+    },
+    PA: {
+      parent_id: "PA",
+      x: "824.8",
+      y: "571.4"
+    },
+    ME: {
+      parent_id: "ME",
+      x: "882.7",
+      y: "502.6"
     },
     MI: {
       parent_id: "MI",
-      x: "663",
-      y: "185"
-    },
-    PR: {
-      parent_id: "PR",
-      x: "620",
-      y: "545"
-    },
-    GU: {
-      parent_id: "GU",
-      x: "550",
-      y: "540"
-    },
-    VI: {
-      parent_id: "VI",
-      x: "680",
-      y: "519"
-    },
-    MP: {
-      parent_id: "MP",
-      x: "570",
-      y: "575"
-    },
-    AS: {
-      parent_id: "AS",
-      x: "665",
-      y: "580"
+      x: "760.2",
+      y: "556.5"
     }
   },
   legend: {
