@@ -380,11 +380,6 @@ var simplemaps_namap_mapdata={
       lat: 49.172,
       lng: -122.582
     },
-    "23": {
-      name: "Gavin Blue",
-      lat: 34.533,
-      lng: -96.221
-    },
     "24": {
       name: "George Wiggins",
       lat: 38.291,
