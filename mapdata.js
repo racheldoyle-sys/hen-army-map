@@ -285,6 +285,11 @@ var simplemaps_namap_mapdata={
       lat: 45.147,
       lng: -122.84
     },
+    "3": {
+      name: "John Velez",
+      lat: 32.501,
+      lng: -94.741
+    },
     "4": {
       lat: "40.693",
       lng: "-84.242",
