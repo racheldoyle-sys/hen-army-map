@@ -285,11 +285,6 @@ var simplemaps_namap_mapdata={
       lat: 45.147,
       lng: -122.84
     },
-    "3": {
-      name: "Angela Haynes",
-      lat: 36.576,
-      lng: -82.737
-    },
     "4": {
       lat: "40.693",
       lng: "-84.242",
