@@ -530,11 +530,6 @@ var simplemaps_namap_mapdata={
       lat: 41.313,
       lng: -72.144
     },
-    "53": {
-      lat: 45.266,
-      lng: -73.604,
-      name: "Marc Andre Aubin"
-    },
     "54": {
       lat: 39.997,
       lng: -74.947,
