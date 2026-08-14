@@ -385,6 +385,11 @@ var simplemaps_namap_mapdata={
       lat: 49.172,
       lng: -122.582
     },
+    "23": {
+      name: "Sven Hebbard",
+      lat: 53.546,
+      lng: -113.49
+    },
     "24": {
       name: "George Wiggins",
       lat: 38.291,
@@ -529,6 +534,11 @@ var simplemaps_namap_mapdata={
       name: "Kyle Nicholas Chapman",
       lat: 41.313,
       lng: -72.144
+    },
+    "53": {
+      lat: 45.266,
+      lng: -73.604,
+      name: "Marc Andre Aubin"
     },
     "54": {
       lat: 39.997,
