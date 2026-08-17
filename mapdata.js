@@ -303,7 +303,8 @@ var simplemaps_namap_mapdata={
     "6": {
       name: "Brandon Burnett",
       lat: 40.595,
-      lng: -89.62
+      lng: -89.62,
+      hidden: "yes"
     },
     "7": {
       name: "Brandon Cory",
